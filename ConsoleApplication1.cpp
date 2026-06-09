@@ -9,8 +9,14 @@ int main()
 {
 	Enemy* enemy = EnemyFactory::CreateEnemy(1);
 
-	std::cout << enemy->Data.Name << "EXP:" << enemy->Data.EXP << "Gold" << enemy->Data.Gold;
-	
+	if (enemy != nullptr) {
+		std::cout 
+			<< enemy->Data.Name
+			<< "EXP:" << enemy->Data.EXP 
+			<< "Gold:" << enemy->Data.Gold
+		    << " CriticalRate:" << enemy->Data.CriticalRate
+			<< "%";
+	}
 	delete enemy;
 
 	return 0;

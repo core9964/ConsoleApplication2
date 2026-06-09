@@ -16,6 +16,7 @@ struct EnemyData
 	int EXP;
 	Element Element;
 
+	// クリティカル率
 	int CriticalRate;
 
 };
